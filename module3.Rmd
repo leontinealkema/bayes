@@ -1,0 +1,25 @@
+---
+title: Module 3 - One continuous parameter
+subtitle: ""
+#author: Leontine Alkema
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+     toc_depth: 3
+---
+
+### Slides
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/3_continuous_fall2022.pdf')
+```
+
+
+### Recording
+
+  
+```{r, echo = F}
+knitr::include_url('https://echo360.org/media/9886bd81-bdaf-4bf8-8f90-345a9e4191fb/public')
+```
+

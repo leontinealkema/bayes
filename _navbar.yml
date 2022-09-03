@@ -10,8 +10,12 @@ left:
         href: ./schedule.html
   - text: "Modules"
     menu:
-       - text: "Module 1"
+       - text: "Module 1 - Introduction"
          href: ./module1.html
+       - text: "Module 2 - One discrete parameter"
+         href: ./module2.html
+       - text: "Module 3 - One continuous parameter"
+         href: ./module3.html
 right:
   - icon: fa-github fa-lg
     href: https://github.com/leontinealkema/bayes
