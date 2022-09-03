@@ -1,0 +1,17 @@
+name: "Leontine Alkema"
+title: "Applied Bayesian Modeling"
+type: inverse
+left:
+  - text: "General information"
+    menu:
+      - text: "Information about the course"
+        href: ./syllabus.html
+      - text: "Course schedule BIOSTATS 730"
+        href: ./schedule.html
+  - text: "Modules"
+    menu:
+       - text: "Module 1"
+         href: ./module1.html
+right:
+  - icon: fa-github fa-lg
+    href: https://github.com/leontinealkema/bayes

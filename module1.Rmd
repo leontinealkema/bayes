@@ -1,0 +1,16 @@
+---
+title: Module 1 - Introduction
+subtitle: ""
+#author: Leontine Alkema
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+     toc_depth: 3
+---
+
+### Slides
+        
+
+### Recording
+        

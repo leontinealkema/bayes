@@ -1,0 +1,17 @@
+---
+title: Course information
+subtitle: ""
+author: 
+institute: "University of Massachusetts Amherst"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+This is the course website for UMass Amherst BIOSTATS 730 - Applied Bayesian Modeling.
+Please check the <a href="https://drive.google.com/file/d/1WzBAfNRqWosxBx_jOOxd3amc8sQqJFSp/view?usp=sharing" target="_blank">syllabus</a> for detailed information about the course. 
+
+
+```{r, echo = F}
+#knitr::include_url('https://drive.google.com/file/d/1WzBAfNRqWosxBx_jOOxd3amc8sQqJFSp/view?usp=sharing')
+```
