@@ -12,6 +12,8 @@ output:
 
 ### HW1
 
+R notebook can be downloaded from this <a href="https://drive.google.com/drive/folders/1XX_wfHa89E-0quq3LTmxQ03idkpHTRwP?usp=sharing" target="_blank">Google folder</a>. (This link/set-up will be updated if I figure out an easier way to provide the Rmd's)
+
 ```{r, echo = F}
 knitr::include_url('https://leontinealkema.github.io/bayes/hws/hw1.pdf')
 ```
