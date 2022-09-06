@@ -1,0 +1,17 @@
+---
+title: HWs
+subtitle: ""
+author: 
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+
+### HW1
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/hws/hw1.pdf')
+```

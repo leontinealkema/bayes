@@ -16,6 +16,8 @@ left:
          href: ./module2.html
        - text: "Module 3 - One continuous parameter"
          href: ./module3.html
+  - text: "HWs"
+    href: ./hws.html
 right:
   - icon: fa-github fa-lg
     href: https://github.com/leontinealkema/bayes
