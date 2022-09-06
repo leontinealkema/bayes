@@ -25,10 +25,9 @@ knitr::include_url('https://echo360.org/media/9886bd81-bdaf-4bf8-8f90-345a9e4191
 
 ### Code
 
+HW1 R notebook is in 
+[this folder](leontinealkema.github.io/bayes/code), knitted pdf is shown here:
 ```{r, echo = F}
 knitr::include_url('https://leontinealkema.github.io/bayes/code/module3_everythingisnormal.pdf')
 ```
 
-```{r, echo = F}
-knitr::include_url('https://leontinealkema.github.io/bayes/code/module3_everythingisnormal.Rmd')
-```
