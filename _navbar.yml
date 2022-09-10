@@ -16,6 +16,8 @@ left:
          href: ./module2.html
        - text: "Module 3 - One continuous parameter"
          href: ./module3.html
+       - text: "Module 4 - Posterior for normal-normal set-up"
+         href: ./module4.html
   - text: "HWs"
     href: ./hws.html
 right:
