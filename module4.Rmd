@@ -20,7 +20,7 @@ knitr::include_url('https://leontinealkema.github.io/bayes/slides/4_normalnormal
 
   
 ```{r, echo = F}
-#knitr::include_url('https://echo360.org/media/9886bd81-bdaf-4bf8-8f90-345a9e4191fb/public')
+knitr::include_url('https://echo360.org/media/a499020b-82b8-46ce-9bab-1277c81c9765/public')
 ```
 
 
