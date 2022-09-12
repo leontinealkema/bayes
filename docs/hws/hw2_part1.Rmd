@@ -1,0 +1,92 @@
+---
+title: "Applied Bayesian modeling - HW2, part 1"
+header-includes:
+    - \usepackage{bm}
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+Note: this contains part 1 of HW2, based on module 4 only. A question on module 5 will be added by Wednesday. 
+
+# Part 1 - based on module 4
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Exercise 1: Derivation of a posterior using Bayes' rule  [3 pts]
+
+This exercise is about the material in module 4.
+
+Obtain $p(\mu|\bm{y})$ when prior and data are defined as follows:
+\begin{eqnarray*}
+y_i|\theta_i, \sigma^2 &\sim& N(\theta_i, \sigma^2) \text{(independent), for } i = 1, 2, \hdots, n; \\
+\theta_i &=& \mu + r_i;\\
+\mu &\sim& N(m_0,s_{\mu0}^2);
+\end{eqnarray*} 
+where $r_i$ refers to a known reporting error (that varies across observations) and $\sigma^2$ is known. 
+
+
+
+
+
+## Exercise 2: Interpretation of the role of prior information for estimating IQ scores  [5 pts]
+
+This exercise is about the material in module 4, based on Hoff 5.4 (but using a different prior on $\mu$).
+
+Background: Scoring on IQ tests is designed to produce a normal distribution with a mean of 100 and a standard deviation of 15 (a variance of 225) when applied to the general population.  
+
+Suppose we are to sample $n$ individuals from a
+particular town in the United States and then estimate $\mu$, the town-specific mean IQ score, based on the sample of size $n$.  
+Let $y_i$ denote the IQ score for the $i$-th person in the town of interest, and assume $y_1, y_2, \hdots , y_n|\mu, \sigma^2 \sim N(\mu, \sigma^2)$ (independent), with  $\sigma = 15$. Suppose that $\bar{y} = 113$ and $n=10$. 
+
+For Bayesian inference about $\mu$, the following prior will be used:
+\begin{eqnarray*}
+	\mu &\sim& N(m_0, s_{\mu0}^2),
+\end{eqnarray*}
+with $m_0 = 100$ and $s_{\mu0} = \sigma = 15$ (based on the information about IQ scores). 
+
+
+
+### Exercise 2a
+(i) Given the information above, obtain the expression for the Bayesian point estimate of $\mu$, $\hat{\mu}_{Bayes} = E(\mu|\bm{y})$, in terms of $m_0$, $n$, $\bar{y}$, and/or $\sigma$. (Note that the expression simplifies relative to the expression we obtained in mdule 4, using only a subset of these). 
+
+(ii) Interpret the Bayesian point estimate as the weighted combination of prior information and data 
+
+(iii) Then calculate the value for $\hat{\mu}_{Bayes}$ given the information provided and construct a 95\% credible interval for $\mu$.
+
+
+### 2b Extra credit: 
+
+We will now compare the sampling properties of the Bayes estimator for $\mu$, $\hat{\mu}_{Bayes} = E(\mu|\bm{y})$, to the maximum likelihood estimator $\hat{\mu}_{MLE} = \bar{y}$. Sampling properties of estimators refer to their behavior under hypothetically repeatable surveys or experiments, summarized into bias and mean squared error, as explained below with $\mu^*$ referring to the (unknown) true value of $\mu$:  
+- The bias of an estimator is defined as the difference between its expected value and the (unknown) true value:  
+$$Bias(\hat{\mu}) = E[\hat{\mu}] - \mu^*$$
+- Bias refers to how close the center of mass of the sampling distribution of an estimator is to the true value. An unbiased estimator is an estimator with zero bias, which sounds desirable. However, bias does not tell us how far away an estimate might be from the true value. For example, $y_1$ is an unbiased estimator of the population mean $\mu$, but will generally be farther away from $\mu$ than $\bar{y}$.  
+- To evaluate how close an estimator $\hat{\mu}$ is likely to be to the true
+value $\mu^*$, we might use the mean squared error (MSE). Letting $m = E[\hat{\mu}]$, the MSE of an estimator $\hat{\mu}$ is 
+\begin{eqnarray*}
+	MSE[\hat{\mu}] &=& E[(\hat{\mu} - \mu^*)^2],\\
+	&=& E[(\hat{\mu} - m + m - \mu^*)^2],\\
+	&=& E[(\hat{\mu} - m )^2] +2E[(\hat{\mu} - m)(m - \mu^*)]+E[(m - \mu^*)^2],\\
+	&=& E[(\hat{\mu} - m )^2] +(m - \mu^*)^2,\\
+	&=& Var[\hat{\mu}] + Bias(\hat{\mu})^2.
+\end{eqnarray*}
+This means that, before the data are gathered, the expected distance from
+the estimator to the true value depends on how close $\mu^*$ is to the center of the
+distribution of $\hat{\mu}$ (the bias), as well as how spread out the distribution is (the
+variance of $\hat{\mu}$).
+
+#### Exercise 
+Suppose that (unknown to us) the true mean IQ score $\mu^*$ in the town was quite high, $\mu^* = 112$. 	Calculate the bias, variance and MSE of the Bayes and ML estimators. Which estimator has a larger bias? Which estimator has a larger MSE?  
+Hint (based on a commonly made mistake): $E(\hat{\mu}_{Bayes}) \neq \hat{\mu}_{Bayes}$
+	
+Optional: Consider  
+(i) plotting the sampling distributions for both the Bayes estimator as well as the MLE.  
+(ii) obtaining the Bayes and ML MSEs for sample sizes $n$ = 10 to 1,000 and plotting the ratio (Bayes MSE)/(ML MSE) against sample size, to then interpret your findings. 
+
+# Part 2 - based on module 5
+To be added by Wednesday. 
+
