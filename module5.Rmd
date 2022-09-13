@@ -1,0 +1,26 @@
+---
+title: Module 5 - Sampling
+subtitle: ""
+#author: Leontine Alkema
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+     toc_depth: 3
+---
+
+### Slides
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/5_sampling.pdf')
+```
+
+
+### Recording
+
+  
+```{r, echo = F}
+knitr::include_url('https://echo360.org/media/2b86eddd-9135-4737-a35f-46d13b27e14e/public')
+```
+
+

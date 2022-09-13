@@ -18,6 +18,8 @@ left:
          href: ./module3.html
        - text: "Module 4 - Posterior for normal-normal set-up"
          href: ./module4.html
+       - text: "Module 5 - Sampling"
+         href: ./module4.html
   - text: "HWs"
     href: ./hws.html
 right:
