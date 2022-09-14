@@ -24,3 +24,12 @@ knitr::include_url('https://echo360.org/media/2b86eddd-9135-4737-a35f-46d13b27e1
 ```
 
 
+### Code
+
+R notebook can be downloaded from this <a href="https://drive.google.com/drive/folders/1XX_wfHa89E-0quq3LTmxQ03idkpHTRwP?usp=sharing" target="_blank">Google folder</a>. (This link/set-up will be updated if I figure out an easier way to provide the Rmd's)
+
+Knitted pdf is shown here:
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/code/module5_sampling.pdf')
+```
+

@@ -1,5 +1,5 @@
 ---
-title: "Applied Bayesian modeling - HW2, part 1"
+title: "Applied Bayesian modeling - HW2"
 header-includes:
     - \usepackage{bm}
 output:
@@ -8,7 +8,11 @@ output:
     df_print: paged
 ---
 
-Note: this contains part 1 of HW2, based on module 4 only. A question on module 5 will be added by Wednesday. 
+Score: The maximum number of points in this HW is 12 points, with 3 points extra credit. For calculating a final HW grade, the points will be rescaled to a maximum score of (12+3)/12*100% = 125%. 
+
+What to hand in: For any exercises using R, we need an Rmd and a knitted pdf. 
+You can add the answers to other exercises in the same markdown file or create them in a different way (as long as it's legible). if you create them outstide markdown, please combine all answers into one pdf. 
+ 
 
 # Part 1 - based on module 4
 
@@ -27,13 +31,16 @@ y_i|\theta_i, \sigma^2 &\sim& N(\theta_i, \sigma^2) \text{(independent), for } i
 \theta_i &=& \mu + r_i;\\
 \mu &\sim& N(m_0,s_{\mu0}^2);
 \end{eqnarray*} 
-where $r_i$ refers to a known reporting error (that varies across observations) and $\sigma^2$ is known. 
+where $r_i$ refers to a known/fixed reporting error (that varies across observations) and $\sigma^2$ is known. 
+
+Note that you can treat the $r_i$ as fixed, not random.  
+(A more realistic but somewhat more difficult exercise would be to have $r_i$ be random, and assume that they are normally distributed and independent of the $y_i$'s).
 
 
 
 
 
-## Exercise 2: Interpretation of the role of prior information for estimating IQ scores  [5 pts]
+## Exercise 2: Interpretation of the role of prior information for estimating IQ scores  
 
 This exercise is about the material in module 4, based on Hoff 5.4 (but using a different prior on $\mu$).
 
@@ -51,28 +58,29 @@ with $m_0 = 100$ and $s_{\mu0} = \sigma = 15$ (based on the information about IQ
 
 
 
-### Exercise 2a
-(i) Given the information above, obtain the expression for the Bayesian point estimate of $\mu$, $\hat{\mu}_{Bayes} = E(\mu|\bm{y})$, in terms of $m_0$, $n$, $\bar{y}$, and/or $\sigma$. (Note that the expression simplifies relative to the expression we obtained in mdule 4, using only a subset of these). 
+### Exercise 2a [5pts]
+(i) Given the information above, obtain the expression for the Bayesian point estimate of $\mu$, $\hat{\mu}_{Bayes} = E(\mu|\bm{y})$, in terms of $m_0$, $n$, $\bar{y}$, and/or $\sigma$ (don't plug in values yet; note that the expression simplifies relative to the expression we obtained in mdule 4, using only a subset of these). 
 
 (ii) Interpret the Bayesian point estimate as the weighted combination of prior information and data 
 
 (iii) Then calculate the value for $\hat{\mu}_{Bayes}$ given the information provided and construct a 95\% credible interval for $\mu$.
 
 
-### 2b Extra credit: 
+### 2b Extra credit [3pts] 
 
 We will now compare the sampling properties of the Bayes estimator for $\mu$, $\hat{\mu}_{Bayes} = E(\mu|\bm{y})$, to the maximum likelihood estimator $\hat{\mu}_{MLE} = \bar{y}$. Sampling properties of estimators refer to their behavior under hypothetically repeatable surveys or experiments, summarized into bias and mean squared error, as explained below with $\mu^*$ referring to the (unknown) true value of $\mu$:  
-- The bias of an estimator is defined as the difference between its expected value and the (unknown) true value:  
-$$Bias(\hat{\mu}) = E[\hat{\mu}] - \mu^*$$
+- The bias of an estimator is defined as the difference between its expected value (w.r.t. data $\bm{y}$) and the (unknown) true value:  
+$$Bias(\hat{\mu}) = E_{\bm{y}}[\hat{\mu}|\mu^*] - \mu^*$$
+(adding the subscript with the expectation here to make it clear that the expectation is wrt $\bm{y}$, to clarify that the data are what's random here; also adding conditioning on true value $\mu^*$)  
 - Bias refers to how close the center of mass of the sampling distribution of an estimator is to the true value. An unbiased estimator is an estimator with zero bias, which sounds desirable. However, bias does not tell us how far away an estimate might be from the true value. For example, $y_1$ is an unbiased estimator of the population mean $\mu$, but will generally be farther away from $\mu$ than $\bar{y}$.  
 - To evaluate how close an estimator $\hat{\mu}$ is likely to be to the true
-value $\mu^*$, we might use the mean squared error (MSE). Letting $m = E[\hat{\mu}]$, the MSE of an estimator $\hat{\mu}$ is 
+value $\mu^*$, we might use the mean squared error (MSE). Letting $m = E_{\bm{y}}[\hat{\mu}|\mu^*]$, the MSE of an estimator $\hat{\mu}$ is 
 \begin{eqnarray*}
-	MSE[\hat{\mu}] &=& E[(\hat{\mu} - \mu^*)^2],\\
-	&=& E[(\hat{\mu} - m + m - \mu^*)^2],\\
-	&=& E[(\hat{\mu} - m )^2] +2E[(\hat{\mu} - m)(m - \mu^*)]+E[(m - \mu^*)^2],\\
-	&=& E[(\hat{\mu} - m )^2] +(m - \mu^*)^2,\\
-	&=& Var[\hat{\mu}] + Bias(\hat{\mu})^2.
+	MSE[\hat{\mu}|\mu^*] &=& E_{\bm{y}}[(\hat{\mu} - \mu^*)^2|\mu^*],\\
+	&=& E_{\bm{y}}[(\hat{\mu} - m + m - \mu^*)^2|\mu^*],\\
+	&=& E_{\bm{y}}[(\hat{\mu} - m )^2|\mu^*] +2E_{\bm{y}}[(\hat{\mu} - m)(m - \mu^*)]+E[(m - \mu^*)^2|\mu^*],\\
+	&=& E_{\bm{y}}[(\hat{\mu} - m )^2|\mu^*] +(m - \mu^*)^2,\\
+	&=& Var[\hat{\mu}|\mu^*] + Bias(\hat{\mu})^2.
 \end{eqnarray*}
 This means that, before the data are gathered, the expected distance from
 the estimator to the true value depends on how close $\mu^*$ is to the center of the
@@ -81,12 +89,22 @@ variance of $\hat{\mu}$).
 
 #### Exercise 
 Suppose that (unknown to us) the true mean IQ score $\mu^*$ in the town was quite high, $\mu^* = 112$. 	Calculate the bias, variance and MSE of the Bayes and ML estimators. Which estimator has a larger bias? Which estimator has a larger MSE?  
-Hint (based on a commonly made mistake): $E(\hat{\mu}_{Bayes}) \neq \hat{\mu}_{Bayes}$
+Hint (based on a commonly made mistake): $E_{\bm{y}}(\hat{\mu}_{Bayes}|\mu^*) \neq \hat{\mu}_{Bayes}$, you need to get the expected value w.r.t. the data $\bm{y}$. 
 	
 Optional: Consider  
 (i) plotting the sampling distributions for both the Bayes estimator as well as the MLE.  
 (ii) obtaining the Bayes and ML MSEs for sample sizes $n$ = 10 to 1,000 and plotting the ratio (Bayes MSE)/(ML MSE) against sample size, to then interpret your findings. 
 
-# Part 2 - based on module 5
-To be added by Wednesday. 
+# Part 2 - based on module 5 
+
+## Execise 3: get stan going on your laptop [4pts]
+
+The goal of this exercise is just to make sure you have stan (specifically, through rstan and brms) working on your laptop. 
+To do so, please work through the Rmd file with module5, module5_sampling.Rmd.
+
+For this HW Rmd, please add an example model fit using brms. This can be a model fit to radon data, copied from the module5 example, or a model fit from the brms examples. Also let us know if you successfully installed rstan and got it to work. If not, please explain the issue.
+
+
+
+
 

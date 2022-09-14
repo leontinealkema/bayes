@@ -1,0 +1,185 @@
+---
+title: "Applied Bayesian Modeling - module 5"
+author: "Leontine Alkema"
+date: "August 29, 2022"
+output: 
+  pdf_document:
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+```
+
+
+# Illustration of MC approximation
+
+Note: make sure to set a seed to make results that involve sampling reproducible
+```{r}
+set.seed(1234)
+samp <- rnorm(10000)
+mean(samp)
+
+
+tibble(samp) %>%
+  ggplot() +
+  geom_histogram(aes(x = samp, y =..density..), fill = "green", alpha = 0.5) +
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+ ggtitle("10K samples")
+
+```
+
+# Fit a Bayesian model using brms
+
+In this lab, we will first install the brms and rstan packages for Bayesian model fitting. The goal is to make sure that everyone has a working set-up, to not be held back by that next week when we're starting to get into details of brms/rstan.  
+
+## Installation
+Steps are to:  
+- install a C++ compiler (needed for Stan to run), see here   
+<https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuring-c-toolchain>  
+- followed by installing the rstan and brms packages, see  
+<https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#latest-development-version-226x---unreleased>  
+<https://github.com/paul-buerkner/brms#how-do-i-install-brms>
+
+## Verfiy that your rstan installation is working alright
+
+You can then verify your rstan installation, see here 
+<https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#verifying-installation>
+I.e., run the following 
+```{r}
+#example(stan_model, package = "rstan", run.dontrun = TRUE)
+```
+
+## Fit a model using brms
+
+Let's fit some models to the radon data 
+
+```{r}
+library(brms)
+```
+
+Read in the radon data and process (copied from earlier module)
+```{r}
+# house level data
+d <- read.table(url("http://www.stat.columbia.edu/~gelman/arm/examples/radon/srrs2.dat"), 
+                header=T, sep=",")
+
+# deal with zeros, select what we want, make a fips (county) variable to match on 
+d <- d %>% 
+  mutate(activity = ifelse(activity==0, 0.1, activity)) %>% 
+  mutate(fips = stfips * 1000 + cntyfips) %>%   
+  dplyr::select(fips, state, county, floor, activity)
+
+# county level data
+cty <- read.table(url("http://www.stat.columbia.edu/~gelman/arm/examples/radon/cty.dat"), 
+                  header = T, sep = ",")
+cty <- 
+  cty %>% 
+  mutate(fips = 1000 * stfips + ctfips) %>% 
+  dplyr::select(fips, Uppm) %>%
+  rename(ura_county = (Uppm))
+
+dmn <- d %>% 
+  filter(state=="MN") %>% # Minnesota data only
+  dplyr::select(fips, county, floor, activity) %>% 
+  left_join(cty) 
+
+y <- log(dmn$activity)
+ybar <- mean(y)
+sd.y <- sd(y)
+n <- length(y)
+
+```
+
+Just fit one model to check that brms is working ok. Here we are again estimating the mean $\mu$, just like in module 3, using brms-default priors for $\mu$ and $\sigma$ (to be discussed further). To estimate the mean, we can use a regression model (and corresponding formula, like in an  lm call) with an intercept only. 
+
+Note: I save the fitted model in a directory "output", such that when knitting, the model is not rerun (see argument of brms, if you're interested). It's a handy option, just watch out with it when you're still updating your data inputs (as it won't update!). 
+```{r}
+#dir.create("output") # if you don't have an output directory yet 
+fit <- brm(y ~ 1, family = gaussian(), data = tibble(y), 
+            cores = getOption("mc.cores", 4),
+           file = "output/mod5_fit" # adding this to save the fit, 
+           # then when knitting, the model is not rerun (see arguments)
+            )
+```
+
+Check the output
+```{r}
+fit
+```
+
+
+
+## Optional extra fits
+
+Fit models with different combinations of  
+- Mu: informative vs vague prior for mu  
+- sigma fixed at sd(y) or estimated (with default vague prior assigned by brms)
+
+Specifying prior settings for mu (we'll discuss details later re how this is coded):
+```{r}
+mu_informativepriorhw1 <- set_prior("normal(0,0.1)", class = "Intercept")
+mu_vagueprior <- set_prior("normal(0,100)", class = "Intercept")
+sigma_fixed <- set_prior("constant(0.86)", class = "sigma")
+```
+
+Now fit
+```{r}
+fit_muinformative_sigmafixed  <- brm(y ~ 1, family = gaussian(), data = tibble(y), 
+            cores = getOption("mc.cores", 4),
+            prior = c(mu_informativepriorhw1, sigma_fixed),
+             file = "output/mod5_fit_muinformative_sigmafixed"
+            )
+```
+
+
+```{r}
+fit_muvague_sigmafixed  <- brm(y ~ 1, family = gaussian(), data = tibble(y), 
+            cores = getOption("mc.cores", 4),
+            prior = c(mu_vagueprior, sigma_fixed),
+            file = "output/mod5_fit_muvague_sigmafixed"
+            )
+```
+
+
+```{r}
+fit_muvague_estimatesigma  <- brm(y ~ 1, family = gaussian(), data = tibble(y), 
+            cores = getOption("mc.cores", 4),
+            prior = c(mu_vagueprior),
+            file = "output/mod5_fit_muvague_estimatesigma"  
+            )
+```
+
+
+```{r}
+fit_muinformative_estimatesigma  <- brm(y ~ 1, family = gaussian(), data = tibble(y), 
+            cores = getOption("mc.cores", 4),
+            prior = c(mu_informativepriorhw1),
+            file = "output/mod5_fit_muinformative_estimatesigma"
+            )
+```
+
+
+
+
+
+```{r}
+fit_muinformative_sigmafixed
+```
+
+```{r}
+fit_muvague_sigmafixed
+```
+
+```{r}
+fit_muinformative_estimatesigma
+```
+
+```{r}
+fit_muvague_estimatesigma
+```
+
+
+
+
