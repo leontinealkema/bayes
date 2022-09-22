@@ -21,7 +21,6 @@ If the link above doesn't work for you, you can find the pdf file in the github 
 
 ### Recording
 
-(this will show up once processed by echo360)
   
 ```{r, echo = F}
 knitr::include_url('https://echo360.org/media/197e23f3-4cdd-4e1b-b579-176afe0f7c63/public')
@@ -37,3 +36,5 @@ Knitted pdf is shown here:
 knitr::include_url('https://leontinealkema.github.io/bayes/code/module6.pdf')
 ```
 
+If the link above doesn't work for you, you can find the pdf file in the github repo:  
+<https://leontinealkema.github.io/bayes/code/module6.pdf>

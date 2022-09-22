@@ -1,0 +1,57 @@
+---
+title: "Applied Bayesian modeling - HW3, V1"
+header-includes:
+    - \usepackage{bm}
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+I am posting the HW-V1 to have questions to work on in class on 9/22/after watching module 6. Note that there may be additional questions added later.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(brms)
+```
+
+# Exercise 1: Fit a Bayesian model using brm and check and interpret the output
+
+We continue with IQ data, as introduced in HW2. For this HW, data set iq_scores.csv contains 10 iq-scores, sampled from a town in let's say, your favorite country. 
+
+Use brm to fit the following model to the IQ data:
+\begin{eqnarray*}
+y_i|\theta_i, \sigma^2 &\sim& N(\theta_i, \sigma^2) \text{(independent), for } i = 1, 2, \hdots, n; \\
+\mu &\sim& N(100, 15^2);\\
+\sigma &\sim& \text{use the brm-default}.
+\end{eqnarray*} 
+
+Then answer the following questions:  
+(i) Plot a histogram of the posterior samples of $\mu$ and report a posterior point estimate and 80% CI for $\mu$.  
+(ii) Plot a histogram of the posterior samples of $\sigma$ and report a posterior point estimate and 80% CI for $\sigma$.  
+(iii) Can you report a posterior point estimate and 80% CI for $\mu/\sigma$? If yes, do so. If not, why not?   
+
+Note that the prior for $\mu$ can be specified with an additional argument in brm (as illustrated in optional material in module 5), as follows:
+```{r}
+#mu_prior <- set_prior("normal(100,15)", class = "Intercept")
+#fit  <- brm(y ~ 1, prior = c(mu_prior), 
+#           your other usual arguments)
+```
+
+
+## Exercise 2: Compare and contrast the MCMC diagnostics of two different model fits
+
+Continue with the IQ data from Q1 (with y= IQ scores)  to fit the model  as specified below. Present and briefly summarize resulting MCMC diagnostics for $\mu$ (traceplots, Rhat, effective sample sizes). Then and comment on whether this model fit can be used for summarizing information regarding $\mu$. If not, why not? 
+
+
+```{r}
+#fit_bad <- brm(y ~ 1, data = dat,
+#        chains = 4, iter = 200, cores = getOption("mc.cores", 4),
+#        control = list(adapt_delta = 0.6, max_treedepth = 4)
+#         # these are NOT recommended options, trying to create problems here!
+#        )
+```
+
+
