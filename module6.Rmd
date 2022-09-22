@@ -16,7 +16,7 @@ knitr::include_url('https://leontinealkema.github.io/bayes/slides/6_sampling_sta
 ```
 
 If the link above doesn't work for you, you can find the pdf file in the github repo:  
-<https://leontinealkema.github.io/bayes/slides/6_sampling_stan.pdf>
+<https://github.com/leontinealkema/bayes/tree/main/docs/slides>
 
 
 ### Recording
@@ -37,4 +37,4 @@ knitr::include_url('https://leontinealkema.github.io/bayes/code/module6.pdf')
 ```
 
 If the link above doesn't work for you, you can find the pdf file in the github repo:  
-<https://leontinealkema.github.io/bayes/code/module6.pdf>
+<https://github.com/leontinealkema/bayes/tree/main/docs/code>
