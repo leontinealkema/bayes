@@ -1,0 +1,34 @@
+---
+title: Module 7 - Bayesian multilevel models
+subtitle: ""
+#author: Leontine Alkema
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+     toc_depth: 3
+---
+
+### Slides
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/7_hierarchicalmodels.pdf')
+```
+
+
+### Recording
+
+  
+```{r, echo = F}
+knitr::include_url('https://echo360.org/media/24247d48-ef2f-417c-8b39-5d2f46a7e76d/public')
+```
+
+### Code
+
+R notebook can be downloaded from this <a href="https://drive.google.com/drive/folders/1XX_wfHa89E-0quq3LTmxQ03idkpHTRwP?usp=sharing" target="_blank">Google folder</a>. (This link/set-up will be updated if I figure out an easier way to provide the Rmd's)
+
+Knitted pdf is shown here:
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/code/module7.pdf')
+```
+

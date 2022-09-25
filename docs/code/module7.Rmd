@@ -1,0 +1,152 @@
+---
+title: "Applied Bayesian Modeling - module 7"
+author: "Leontine Alkema"
+date: "September 25, 2022"
+output: 
+  pdf_document:
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(brms)
+```
+
+# Read in radon data 
+Read in the radon data and process (copied from earlier module)
+```{r}
+# house level data
+d <- read.table(url("http://www.stat.columbia.edu/~gelman/arm/examples/radon/srrs2.dat"), 
+                header=T, sep=",")
+
+# deal with zeros, select what we want, make a fips (county) variable to match on 
+d <- d %>% 
+  mutate(activity = ifelse(activity==0, 0.1, activity)) %>% 
+  mutate(fips = stfips * 1000 + cntyfips) %>%   
+  dplyr::select(fips, state, county, floor, activity)
+
+# county level data
+cty <- read.table(url("http://www.stat.columbia.edu/~gelman/arm/examples/radon/cty.dat"), 
+                  header = T, sep = ",")
+cty <- 
+  cty %>% 
+  mutate(fips = 1000 * stfips + ctfips) %>% 
+  dplyr::select(fips, Uppm) %>%
+  rename(ura_county = (Uppm))
+
+dmn <- d %>% 
+  filter(state=="MN") %>% # Minnesota data only
+  dplyr::select(fips, county, floor, activity) %>% 
+  left_join(cty) 
+
+```
+
+
+
+## More data processing for multilevel modeling
+
+Some more data processing first, to produce a data set that has county info and to produce the plot with means from the slides. In the data set:
+
+- $y_i$ is log(activity)
+- county gives county name (fips gives the unique county ID)
+- $x_i$ is floor
+- $u_i$ is log_ur = log(ura_county)
+
+(the last two are added for module 8, when including predictors)
+
+```{r}
+dat <- 
+  dmn%>%
+  mutate(y = log(activity), log_ur = log(ura_county))
+head(dat)
+```
+
+Create summary data set with info for each county:
+```{r}
+# to plot observations and county means ~ sample sizes, 
+# easier to see if sample sizes are slighly jittered
+set.seed(12345)
+
+datcounty <- dat %>%
+  group_by(fips) %>%
+  summarize(nhouses = n(), ybar = mean(y), county = county[1], log_ur = log_ur[1]) %>%
+  mutate(nhouses_jitter = nhouses*exp(runif (length(nhouses), -.1, .1)))
+ngroups <- dim(datcounty)[1]
+head(datcounty)
+```
+
+
+```{r}
+ybarbar <- mean(dat$y) # population (here state) mean
+```
+
+```{r}
+datcounty %>% 
+  ggplot(aes(x = nhouses_jitter, y = ybar)) +
+  geom_point() + 
+  geom_hline(mapping = aes(yintercept = ybarbar)) + 
+  theme_bw()
+```
+
+# Model fitting
+
+```{r}
+fit <- brm(y ~ (1|county), 
+        data = dat, 
+        iter = 1000,
+        chains = 4,
+        cores = getOption("mc.cores", 4))
+```
+
+Summary of model fit: 
+```{r}
+summary(fit)
+```
+
+# Visualizing the group-level mean parameters 
+
+Coefficients can be obtained using coef(fit), you can get the help file here:
+```{r}
+#?coef.brmsfit 
+```
+
+Just showing some function calls here first, ie for  mu_alpha:
+```{r}
+fixef(fit)
+```
+
+
+eta = alpha - mu_alpha (as compared to notation in slides), labeled here as random effects 
+```{r}
+eta <- as_tibble(ranef(fit)$county[,,"Intercept"], rownames = "county")
+head(eta)
+```
+
+To get the alpha = eta + mu_alpha, we can use the following call
+```{r}
+alphas <-
+  coef(fit, summary = T)$county %>% 
+  as_tibble(rownames = "county") %>%
+  rename(alph = Estimate.Intercept)
+alphas 
+```
+
+Make the plot of alpha ~ ybar
+```{r}
+alphas %>%
+  left_join(datcounty) %>%
+  ggplot(aes(y = alph, x = ybar, size = nhouses)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0)
+```
+
+Plot of alpha - ybar
+```{r}
+alphas %>%
+  left_join(datcounty) %>%
+  ggplot(aes(y = alph - ybar, x = nhouses)) +
+  geom_point() +
+  geom_hline(yintercept = 0)
+```
+
