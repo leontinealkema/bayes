@@ -22,7 +22,7 @@ left:
          href: ./module5.html
        - text: "Module 6 - Sampling from posterior densities in Stan"
          href: ./module6.html
-       - text: "Module 7 - Bayesian hierarchical models"
+       - text: "Modules 7 and 8 - Bayesian hierarchical regression models"
          href: ./module7.html
   - text: "HWs"
     href: ./hws.html
