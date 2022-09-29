@@ -18,11 +18,14 @@ R notebooks and data sets can be downloaded from this <a href="https://drive.goo
 
 ### HW3
 
-Part 1 (on module 6):
+HW3 without exercise 3
+
 ```{r, echo = F}
-knitr::include_url('https://leontinealkema.github.io/bayes/hws/hw3.pdf')
+knitr::include_url('https://leontinealkema.github.io/bayes/hws/hw3_final.pdf')
 ```
-Part 2 (exercise 3 on module 7)
+
+HW3 - exercise 3
+
 ```{r, echo = F}
 knitr::include_url('https://leontinealkema.github.io/bayes/hws/hw3_exercise3_module7.pdf')
 ```
