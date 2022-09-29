@@ -1,5 +1,5 @@
 ---
-title: "Applied Bayesian modeling - HW3, V1"
+title: "Applied Bayesian modeling - HW3"
 header-includes:
     - \usepackage{bm}
 output:
@@ -8,7 +8,10 @@ output:
     df_print: paged
 ---
 
-I am posting the HW-V1 to have questions to work on in class on 9/22/after watching module 6. Note that there may be additional questions added later.
+
+Score: The maximum number of points in this HW is 20 points, with 3 points extra credit. This HW counts for 1.5 HWs, so points are rescaled such that a "full pass" score is 150%. Specifically, for calculating your final HW score, the points will be rescaled to a maximum score of (20+3)/20*150% = 172.5%. 
+
+
 
 
 ```{r setup, include=FALSE}
@@ -17,7 +20,7 @@ library(tidyverse)
 library(brms)
 ```
 
-# Exercise 1: Fit a Bayesian model using brm and check and interpret the output
+# Exercise 1: Fit a Bayesian model using brm and check and interpret the output (4 points)
 
 We continue with IQ data, as introduced in HW2. For this HW, data set iq_scores.csv contains 10 iq-scores, sampled from a town in let's say, your favorite country. 
 
@@ -41,7 +44,7 @@ Note that the prior for $\mu$ can be specified with an additional argument in br
 ```
 
 
-## Exercise 2: Compare and contrast the MCMC diagnostics of two different model fits
+# Exercise 2: Compare and contrast the MCMC diagnostics of two different model fits (4 points)
 
 Continue with the IQ data from Q1 (with y= IQ scores)  to fit the model  as specified below. Present and briefly summarize resulting MCMC diagnostics for $\mu$ (traceplots, Rhat, effective sample sizes). Then and comment on whether this model fit can be used for summarizing information regarding $\mu$. If not, why not? 
 
@@ -53,5 +56,31 @@ Continue with the IQ data from Q1 (with y= IQ scores)  to fit the model  as spec
 #         # these are NOT recommended options, trying to create problems here!
 #        )
 ```
+
+# Exercise 3: see separate pdf (8 points)
+
+# Exercise 4 (4 points)
+Continue with the marriage data set from exercise 3.  
+The goal in this exercise is to predict the age at first marriage for a randomly sampled woman in an ethnic group for which we have not yet observed any data, using the model and data from exercise 3.
+
+(a) Obtain samples from the predictive posterior density for the age at first marriage and visualize the samples in a histogram. In your answer, include R code (that does NOT use the predict function from brms) as well as a write up in equations how you obtained the samples. Make sure to introduce notation first to explain what you're sampling. 
+
+(b) Use the samples to construct a point prediction and 95% prediction interval for age at first marriage. In your answer, include the expression used for calculating the point prediction from the samples. 
+
+(c) What is the probability that the observed age at first marriage will be greater than $\bar{y}$? In your answer, include the expression used for calculating this probability from the samples. 
+
+
+# Exercise 5 (extra credit, 3 points)
+
+Obtain the joint distribution of $(y_1, y_2)|\mu_{\alpha}, \sigma_{\alpha}^2, \sigma_{y}^2$ in the setting where $j[1] \neq j[2]$ and in the setting where $j[1] = j[2]$.  
+
+Hints:  
+
+- First consider the univariate distribution of $y_i|\mu_{\alpha}, \sigma_{\alpha}^2, \sigma_{y}^2$.  
+- You may find it helpful to write $y_i$ as the sum of parameters (thus random variables) $\mu_{\alpha}$, a parameter to capture the variability across counties, and a parameter to capture variability across observations.
+
+
+
+
 
 
