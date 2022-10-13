@@ -24,8 +24,12 @@ left:
          href: ./module6.html
        - text: "Modules 7 and 8 - Bayesian hierarchical regression models"
          href: ./module7.html
+       - text: "Modules 9 - Expanding our model universe"
+         href: ./module9.html
   - text: "HWs"
     href: ./hws.html
+  - text: "Project"
+    href: ./project.html
 right:
   - icon: fa-github fa-lg
     href: https://github.com/leontinealkema/bayes
