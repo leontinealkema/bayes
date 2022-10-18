@@ -24,8 +24,10 @@ left:
          href: ./module6.html
        - text: "Modules 7 and 8 - Bayesian hierarchical regression models"
          href: ./module7.html
-       - text: "Modules 9 - Expanding our model universe"
+       - text: "Module 9 - Expanding our model universe"
          href: ./module9.html
+       - text: "Module 10 - Rstan and priors"
+         href: ./module10.html
   - text: "HWs"
     href: ./hws.html
   - text: "Project"

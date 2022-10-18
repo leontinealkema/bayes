@@ -1,0 +1,24 @@
+---
+title: Module 10 - rstan and priors
+subtitle: ""
+#author: Leontine Alkema
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+     toc_depth: 3
+---
+
+### Slides
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/10_rstan_priorchoice.pdf')
+```
+
+### Code 
+R notebook and stan models can be downloaded from this <a href="https://drive.google.com/drive/folders/1XX_wfHa89E-0quq3LTmxQ03idkpHTRwP?usp=sharing" target="_blank">Google folder</a>. (This link/set-up will be updated if I figure out an easier way to provide the Rmd's)
+
+Knitted pdf is shown here:
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/code/module10.pdf')
+```
