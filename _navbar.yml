@@ -28,6 +28,8 @@ left:
          href: ./module9.html
        - text: "Module 10 - Rstan and priors"
          href: ./module10.html
+       - text: "Module 11 - Model checking"
+         href: ./module11.html
   - text: "HWs"
     href: ./hws.html
   - text: "Project"

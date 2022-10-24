@@ -1,0 +1,37 @@
+---
+title: Module 11 - Model checking
+subtitle: ""
+#author: Leontine Alkema
+institute: "University of Massachusetts Amherst"
+#date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+     toc_depth: 3
+---
+
+### Slides
+
+Part 1:  in-sample checking 
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/11_modelchecking-part1.pdf')
+```
+
+
+### Recording
+
+Part 1:  in-sample checking 
+  
+```{r, echo = F}
+knitr::include_url('https://echo360.org/media/b85dc00f-df2a-4f00-bef9-cf3ca33b0ad1/public')
+```
+
+### Code
+
+R notebook can be downloaded from this <a href="https://drive.google.com/drive/folders/1XX_wfHa89E-0quq3LTmxQ03idkpHTRwP?usp=sharing" target="_blank">Google folder</a>. (This link/set-up will be updated if I figure out an easier way to provide the Rmd's)
+
+Knitted pdf is shown here:
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/code/module11.pdf')
+```
+
