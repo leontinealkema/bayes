@@ -15,6 +15,15 @@ R notebooks and data sets can be downloaded from this <a href="https://drive.goo
 
 
 
+### HW4
+
+HW4 part 1
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/hws/hw4_part1.pdf')
+```
+
+
 
 ### HW3
 
