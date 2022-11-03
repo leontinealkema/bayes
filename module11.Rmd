@@ -14,9 +14,14 @@ output:
 Part 1:  in-sample checking 
 
 ```{r, echo = F}
-knitr::include_url('https://leontinealkema.github.io/bayes/slides/11_modelchecking-part1.pdf')
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/11_modelingchecking-part1.pdf')
 ```
 
+Part 2:  cross-validation
+
+```{r, echo = F}
+knitr::include_url('https://leontinealkema.github.io/bayes/slides/11_modelingchecking-part2.pdf')
+```
 
 ### Recording
 

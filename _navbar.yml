@@ -30,6 +30,8 @@ left:
          href: ./module10.html
        - text: "Module 11 - Model checking"
          href: ./module11.html
+       - text: "Module 12 - Bayesian workflow"
+         href: ./module12.html
   - text: "HWs"
     href: ./hws.html
   - text: "Project"
