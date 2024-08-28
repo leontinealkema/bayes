@@ -1,0 +1,73 @@
+---
+title: ""
+---
+
+# Overview
+
+All code for this course will be made available in a public repository (repo) on Github: <https://github.com/AlkemaLab/BayesCode>.
+
+We will use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.
+
+The remainder of this page contains a workflow for non-Github users, and some resources if you'd like to brush up on your R skills.
+
+# Instructions for those new to Github
+
+Github refers to a hosting service for projects that use a version control system (git). Many programming projects, such as R packages, use Github repositories and the git version control system such that several people can work together and contribute to the project. Rstudio has nice functionality to work with and contribute to Github repositories. However, it requires some learning to get started with it. Hence, to avoid too much learning at once, we introduce a workflow that does not require any knowledge or experience with git(hub) for new users. If you are interested in learning more about git and github, some resources are provided below. \
+
+**When downloading the code for the first time, take the following steps:**
+
+1.  Download the repo 
+
+-   Go to <https://github.com/AlkemaLab/BayesCode>
+
+-   Click on “Code” (green button to the left), then “download zip”
+
+2.  Set up your local folder with your Rstudio project 
+
+-   Place the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training
+
+-   Unzip the downloaded file
+
+-   Click on “BayesCode.Rproj” to open your project in R studio
+
+We recommend always to start with opening the project file (to start an R studio session), as opposed to opening just the file you want to use, to have the right set up.
+
+You can add additional files and edit the training files as you want. Just make sure to stick to the folder structure to avoid issues. If you are running into problems after editing a local copy of a file, you can always download a new one and start over.
+
+**Code updates/additions:**
+
+New modules will be added as the training progresses. To get the code in your local BayesCode folder, you will need to download the new module and add it. 
+
+To do so, we recommend just downloading the entire repository again as per step A above, unzipping, and then selecting the folder that you want to move to your local BayesCode folder. (But if you want, note that you can also download individual files (just click on the file you want, and then there is a download button \[downwards arrow\] in the top left).
+
+## Getting going with git(hub)
+
+Some brief steps:
+
+-   Get a github account
+
+-   Recommended steps to get started using Rstudio build-in functionality: 
+
+    -   Connect your Rstudio with github, here is an “how-to-set-it-up” explanation [https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio](https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio/)
+
+    -   Consider an Rstudio-based workflow such as this one <https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r>
+
+Once you get going, you may want to learn more. This is a great book: <https://happygitwithr.com/>
+
+# Learning R
+
+## Books on R and Rstudio
+
+These books are all freely available online:
+
+-   R for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O'Reilly Media, Inc. <https://r4ds.hadley.nz/>
+
+-   Statistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. <https://moderndive.com>
+
+-   (short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):
+
+    -   <https://github.com/rstudio-education/remaster-the-tidyverse>
+
+    -   <http://stat545.com/index.html> 
+
+## 

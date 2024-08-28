@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "modules.html",
+    "href": "modules.html",
+    "title": "Modules",
+    "section": "",
+    "text": "Check back soon!"
+  },
+  {
+    "objectID": "R.html",
+    "href": "R.html",
+    "title": "Overview",
+    "section": "",
+    "text": "All code for this course will be made available in a public repository (repo) on Github: https://github.com/AlkemaLab/BayesCode.\nWe will use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.\nThe remainder of this page contains a workflow for non-Github users, and some resources if you’d like to brush up on your R skills."
+  },
+  {
+    "objectID": "R.html#getting-going-with-github",
+    "href": "R.html#getting-going-with-github",
+    "title": "Overview",
+    "section": "Getting going with git(hub)",
+    "text": "Getting going with git(hub)\nSome brief steps:\n\nGet a github account\nRecommended steps to get started using Rstudio build-in functionality: \n\nConnect your Rstudio with github, here is an “how-to-set-it-up” explanation https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio\nConsider an Rstudio-based workflow such as this one https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r\n\n\nOnce you get going, you may want to learn more. This is a great book: https://happygitwithr.com/"
+  },
+  {
+    "objectID": "R.html#books-on-r-and-rstudio",
+    "href": "R.html#books-on-r-and-rstudio",
+    "title": "Overview",
+    "section": "Books on R and Rstudio",
+    "text": "Books on R and Rstudio\nThese books are all freely available online:\n\nR for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc. https://r4ds.hadley.nz/\nStatistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. https://moderndive.com\n(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):\n\nhttps://github.com/rstudio-education/remaster-the-tidyverse\nhttp://stat545.com/index.html"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Applied Bayesian modeling!",
+    "section": "",
+    "text": "Welcome to the course website for Applied Bayesian Modeling! This course is taught by Leontine Alkema at UMass Amherst (BIOSTATS 730).\nPlease check out the general information and modules on this website. Additional course information for enrolled students is on the Canvas course page. More content for others will/may be added here “soon”.\nLecture material (slides, notes, videos) are licensed under CC-BY-NC 4.0. Code is licensed under BSD-3. HWs and exams and their solutions may not be shared without Leontine Alkema’s approval.\nThanks to all who helped improve the content of this course! Special thanks for questions, input, and discussions that have shaped and improved the content to past and current students in the Alkema lab and students who participated in prior offerings of Bayesian modeling at UMass Amherst and Berkeley.\nContact: Leontine Alkema (lalkema@umass.edu)"
+  },
+  {
+    "objectID": "modules_toadd.html",
+    "href": "modules_toadd.html",
+    "title": "Modules",
+    "section": "",
+    "text": "Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?\n\nLink to slides\nLink to recording\n\n\n\n\nThe training is divided into 5 modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nHow to best use data to inform estimates: Data models for survey and routine surveillance data  \nWhat assumptions to make about indicators and how they change with time: Time series process models, focused on transition models \nPutting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found here."
+  },
+  {
+    "objectID": "modules_toadd.html#background",
+    "href": "modules_toadd.html#background",
+    "title": "Modules",
+    "section": "",
+    "text": "Why would we want to introduce Bayesian statistical models to produce estimates and forecasts for Countdown coverage indicators?\n\nLink to slides\nLink to recording"
+  },
+  {
+    "objectID": "modules_toadd.html#training-content",
+    "href": "modules_toadd.html#training-content",
+    "title": "Modules",
+    "section": "",
+    "text": "The training is divided into 5 modules:\n\nIntroduction to Bayesian inference and Bayesian modeling in global health\nHow to exchange information between populations: Hierarchical models (also called multilevel models)\nHow to best use data to inform estimates: Data models for survey and routine surveillance data  \nWhat assumptions to make about indicators and how they change with time: Time series process models, focused on transition models \nPutting it all together: Using Bayesian hierarchical transition models for model fitting, how to go about it, what to check?\n\nIn each module, topics include conceptual understanding as well as hands-on analysis and modeling exercises. The schedule can be found here."
+  },
+  {
+    "objectID": "modules_toadd.html#unit-1-lets-think-like-a-bayesian",
+    "href": "modules_toadd.html#unit-1-lets-think-like-a-bayesian",
+    "title": "Modules",
+    "section": "Unit 1: Let’s think like a Bayesian!",
+    "text": "Unit 1: Let’s think like a Bayesian!\nMaterial:\n\nlink to slides\nlink to recording"
+  },
+  {
+    "objectID": "modules_toadd.html#unit-2-bayesian-inference-for-a-population-proportion",
+    "href": "modules_toadd.html#unit-2-bayesian-inference-for-a-population-proportion",
+    "title": "Modules",
+    "section": "Unit 2: Bayesian inference for a population proportion",
+    "text": "Unit 2: Bayesian inference for a population proportion\nMaterial:\n\nlink to slides\nlink to recording, note that the start of the recording has an issue with the screen capture of the title slide but that resolves itself on the 2nd slide."
+  },
+  {
+    "objectID": "modules_toadd.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
+    "href": "modules_toadd.html#unit-3-more-details-on-bayesian-inference-and-bayes-rule-for-estimating-a-population-proportion",
+    "title": "Modules",
+    "section": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion",
+    "text": "Unit 3: More details on Bayesian inference and Bayes’ rule for estimating a population proportion\nMaterial:\n\nlink to slides\nlink to recording\nlink to R notebook to do Bayesian inference for a population proportion is saved in our github repo in the folder module1, direct link here."
+  },
+  {
+    "objectID": "modules_toadd.html#unit-4-why-bayesians-like-sampling-so-much",
+    "href": "modules_toadd.html#unit-4-why-bayesians-like-sampling-so-much",
+    "title": "Modules",
+    "section": "Unit 4: Why Bayesians like sampling so much",
+    "text": "Unit 4: Why Bayesians like sampling so much\nMaterial: simulation-based inference, Monte Carlo approximation\n\nlink to slides\nlink to recording"
+  },
+  {
+    "objectID": "modules_toadd.html#unit-5-introduction-to-mcmc",
+    "href": "modules_toadd.html#unit-5-introduction-to-mcmc",
+    "title": "Modules",
+    "section": "Unit 5: Introduction to MCMC",
+    "text": "Unit 5: Introduction to MCMC\nMaterial:\n\nlink to slides\nlink to recording"
+  }
+]

@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Applied Bayesian modeling"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: modules.qmd
+        text: Modules
+      - href: R.qmd
+        text: R and Stan
+      
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-icon: true
+    link-external-newwindow: true
+
+
+editor: visual
+

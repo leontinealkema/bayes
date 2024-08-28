@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Applied Bayesian modeling - Welcome to Applied Bayesian modeling!</title>
+<title>Applied Bayesian modeling -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Modules</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./R.html"> 
+    <a class="nav-link active" href="./R.html" aria-current="page"> 
 <span class="menu-text">R and Stan</span></a>
   </li>  
 </ul>
@@ -112,37 +112,95 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#instructions-for-those-new-to-github" id="toc-instructions-for-those-new-to-github" class="nav-link" data-scroll-target="#instructions-for-those-new-to-github">Instructions for those new to Github</a>
+  <ul class="collapse">
+  <li><a href="#getting-going-with-github" id="toc-getting-going-with-github" class="nav-link" data-scroll-target="#getting-going-with-github">Getting going with git(hub)</a></li>
+  </ul></li>
+  <li><a href="#learning-r" id="toc-learning-r" class="nav-link" data-scroll-target="#learning-r">Learning R</a>
+  <ul class="collapse">
+  <li><a href="#books-on-r-and-rstudio" id="toc-books-on-r-and-rstudio" class="nav-link" data-scroll-target="#books-on-r-and-rstudio">Books on R and Rstudio</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Welcome to Applied Bayesian modeling!</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>All code for this course will be made available in a public repository (repo) on Github: <a href="https://github.com/AlkemaLab/BayesCode" class="uri">https://github.com/AlkemaLab/BayesCode</a>.</p>
+<p>We will use the open-source software R for analyses and computations, through its user-friendly interface R-studio (https://posit.co/products/open-source/rstudio/). For model fitting, R packages and extensions are used such that all analyses take place in R. Analysis scripts will be provided for example analyses and discussed in recordings.</p>
+<p>The remainder of this page contains a workflow for non-Github users, and some resources if you’d like to brush up on your R skills.</p>
+</section>
+<section id="instructions-for-those-new-to-github" class="level1">
+<h1>Instructions for those new to Github</h1>
+<p>Github refers to a hosting service for projects that use a version control system (git). Many programming projects, such as R packages, use Github repositories and the git version control system such that several people can work together and contribute to the project. Rstudio has nice functionality to work with and contribute to Github repositories. However, it requires some learning to get started with it. Hence, to avoid too much learning at once, we introduce a workflow that does not require any knowledge or experience with git(hub) for new users. If you are interested in learning more about git and github, some resources are provided below.<br>
+</p>
+<p><strong>When downloading the code for the first time, take the following steps:</strong></p>
+<ol type="1">
+<li>Download the repo&nbsp;</li>
+</ol>
+<ul>
+<li><p>Go to <a href="https://github.com/AlkemaLab/BayesCode" class="uri">https://github.com/AlkemaLab/BayesCode</a></p></li>
+<li><p>Click on “Code” (green button to the left), then “download zip”</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Set up your local folder with your Rstudio project&nbsp;</li>
+</ol>
+<ul>
+<li><p>Place the zipped downloaded file in a place where you can find it again: this directory will contain all your R code for the training</p></li>
+<li><p>Unzip the downloaded file</p></li>
+<li><p>Click on “BayesCode.Rproj” to open your project in R studio</p></li>
+</ul>
+<p>We recommend always to start with opening the project file (to start an R studio session), as opposed to opening just the file you want to use, to have the right set up.</p>
+<p>You can add additional files and edit the training files as you want. Just make sure to stick to the folder structure to avoid issues. If you are running into problems after editing a local copy of a file, you can always download a new one and start over.</p>
+<p><strong>Code updates/additions:</strong></p>
+<p>New modules will be added as the training progresses. To get the code in your local BayesCode folder, you will need to download the new module and add it.&nbsp;</p>
+<p>To do so, we recommend just downloading the entire repository again as per step A above, unzipping, and then selecting the folder that you want to move to your local BayesCode folder. (But if you want, note that you can also download individual files (just click on the file you want, and then there is a download button [downwards arrow] in the top left).</p>
+<section id="getting-going-with-github" class="level2">
+<h2 class="anchored" data-anchor-id="getting-going-with-github">Getting going with git(hub)</h2>
+<p>Some brief steps:</p>
+<ul>
+<li><p>Get a github account</p></li>
+<li><p>Recommended steps to get started using Rstudio build-in functionality:&nbsp;</p>
+<ul>
+<li><p>Connect your Rstudio with github, here is an “how-to-set-it-up” explanation <a href="https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio/">https://sites.northwestern.edu/researchcomputing/resources/using-git-and-github-with-r-rstudio</a></p></li>
+<li><p>Consider an Rstudio-based workflow such as this one <a href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r" class="uri">https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r</a></p></li>
+</ul></li>
+</ul>
+<p>Once you get going, you may want to learn more. This is a great book: <a href="https://happygitwithr.com/" class="uri">https://happygitwithr.com/</a></p>
+</section>
+</section>
+<section id="learning-r" class="level1">
+<h1>Learning R</h1>
+<section id="books-on-r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="books-on-r-and-rstudio">Books on R and Rstudio</h2>
+<p>These books are all freely available online:</p>
+<ul>
+<li><p>R for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc.&nbsp;<a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></p></li>
+<li><p>Statistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman &amp; Hall/CRC The R Series. <a href="https://moderndive.com" class="uri">https://moderndive.com</a></p></li>
+<li><p>(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):</p>
+<ul>
+<li><p><a href="https://github.com/rstudio-education/remaster-the-tidyverse" class="uri">https://github.com/rstudio-education/remaster-the-tidyverse</a></p></li>
+<li><p><a href="http://stat545.com/index.html" class="uri">http://stat545.com/index.html</a>&nbsp;</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
-    
-  
-    
-  </div>
-  
 
-
-</header>
-
-
-<p>Welcome to the course website for Applied Bayesian Modeling! This course is taught by Leontine Alkema at UMass Amherst (BIOSTATS 730).</p>
-<p>Please check out the general information and modules on this website. Additional course information for enrolled students is on the Canvas course page. More content for others will/may be added here “soon”.</p>
-<p>Lecture material (slides, notes, videos) are licensed under CC-BY-NC 4.0. Code is licensed under BSD-3. HWs and exams and their solutions may not be shared without Leontine Alkema’s approval.</p>
-<p>Thanks to all who helped improve the content of this course! Special thanks for questions, input, and discussions that have shaped and improved the content to past and current students in the Alkema lab and students who participated in prior offerings of Bayesian modeling at UMass Amherst and Berkeley.</p>
-<p>Contact: Leontine Alkema (lalkema@umass.edu)</p>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

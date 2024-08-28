@@ -1,0 +1,9 @@
+---
+title: "Modules"
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+# Check back soon!
