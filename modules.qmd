@@ -6,4 +6,14 @@ format:
     link-external-newwindow: true
 ---
 
-# Check back soon!
+# 1 - Introduction 
+
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/r/personal/lalkema_umass_edu/Documents/bayes%20slides%202024/1_intro.pdf?csf=1&web=1&e=kdva55)
+
+-   Link to [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EQXeU01m8PhAtoO-m1ImHJoB9uFc6pvl2OtUnd7HPEVekw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MyJKns)
+
+# 2 - One discrete parameter 
+
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/r/personal/lalkema_umass_edu/Documents/bayes%20slides%202024/2_discrete_fall2022_handout.pdf?csf=1&web=1&e=O7Ye8v)
+
+-   Link to [recording](https://umass-my.sharepoint.com/personal/lalkema_umass_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Flalkema%5Fumass%5Fedu%2FDocuments%2Fbayes%20recordings%2F2%5Fdiscrete%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed66beddc%2De0d3%2D4645%2D8e90%2D75de56313f97)

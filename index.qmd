@@ -8,7 +8,13 @@ format:
 
 Welcome to the course website for Applied Bayesian Modeling! This course is taught by Leontine Alkema at UMass Amherst (BIOSTATS 730).
 
-Please check out the general information and modules on this website. Additional course information for enrolled students is on the Canvas course page. More content for others will/may be added here "soon".
+Course information:
+
+-   Syllabus
+
+-   Course schedule
+
+Additional course information for enrolled students is on the Canvas course page. We will use a Slack workspace for discussion.
 
 Lecture material (slides, notes, videos) are licensed under CC-BY-NC 4.0. Code is licensed under BSD-3. HWs and exams and their solutions may not be shared without Leontine Alkema's approval.
 
