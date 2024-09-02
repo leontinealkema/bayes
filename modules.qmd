@@ -8,13 +8,13 @@ format:
 
 # 1 - Introduction 
 
--   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EamBX_Oj0AZPs5EP-UU4mXQBEjCO23eSsqVMd8vPaXE4XA?e=EzYRPb)
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EamBX_Oj0AZPs5EP-UU4mXQB8TNldZ2lquLB6-lW2u5x6g)
 
 -   Link to [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EQXeU01m8PhAtoO-m1ImHJoB9uFc6pvl2OtUnd7HPEVekw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MyJKns)
 
 # 2 - Bayesian inference for one discrete outcome 
 
--   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Ef9SiHIOdqtEvcFkwNcxJyQB4v8wQU1Bj73AEVbkQuz-Bw?e=eVPZkH)
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Ef9SiHIOdqtEvcFkwNcxJyQB5Ngtnqs5QD87FsGNnNWMhg?e=aU8VyT)
 
 -   Link to [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EZywrcAVZhpDrx8E6CZSBysBLvC_N-rdOH5M1eOimLrR8A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tsNxbA)
 
