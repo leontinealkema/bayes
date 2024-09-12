@@ -38,9 +38,9 @@ format:
 
 # 6 - Sampling from posterior densities in Stan
 
--   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdZYMUlDKEdPqShN0AVodisBl3W84toEy8Jemx-HbXT03A?e=WcZa9R)
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=vpZmAF)
 
-Link to [recording module 6](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=DBaB3B)
+-   Link to [recording module 6](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=DBaB3B)
 
 ## Instructions on how to get Stan and brms set up
 
