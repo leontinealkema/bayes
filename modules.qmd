@@ -46,15 +46,21 @@ format:
 
 -   If you want “just do this” directions… DO THIS:
 
+    -   Consider updating your R and Rstudio
+
     -   First install Rstan in 2 steps:
 
         -   configure your C++ Toolchain, instructions per operating system are here: <https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuring-c-toolchain>
 
         -   install rstan and verify the installation: <https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#installing-rstan>
 
-        -   Then install the brms R package; type in your R console: install.packages(“brms")
+    -   Then install the brms R package; type in your R console: install.packages(“brms")
 
-            Then run the unit 6 code in module1_introbayes/brms_gettingstarted.Rmd… does it work? Yes -\> hoorah! Try out the demos No -\> Check if you missed some steps. If not, get help (in breakout rooms, on our slack)
+    -   Then run the code in module6_brms_gettingstarted.Rmd… does it work?
+
+        -   Yes -\> hoorah!
+
+        -   No -\> Check if you missed some steps. If not, get help (in breakout rooms, on our slack)
 
 -   If you want to figure things out for yourself, see <https://github.com/paul-buerkner/brms?tab=readme-ov-file#how-do-i-install-brms> and stan resources.
 
