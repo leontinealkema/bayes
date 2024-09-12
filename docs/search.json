@@ -4,7 +4,7 @@
     "href": "modules.html",
     "title": "Modules",
     "section": "",
-    "text": "1 - Introduction\n\nLink to slides\nLink to recording\n\n\n\n2 - Bayesian inference for one discrete outcome\n\nLink to slides\nLink to recording\n\n\n\n3 - Bayesian inference for one continuous outcome\n\nLink to slides\nLink to recording\n\n\n\n4 - Deriving a posterior; bias-variance trade-off\n\nLink to slides\nLink to recording module 4"
+    "text": "Link to slides\nLink to recording"
   },
   {
     "objectID": "index.html",
@@ -33,5 +33,12 @@
     "title": "Overview",
     "section": "Books on R and Rstudio",
     "text": "Books on R and Rstudio\nThese books are all freely available online:\n\nR for Data Science (first published in 2017, now on 2(+?) edition, content updated on website). Hadley Wickham and Garrett Grolemund. O’Reilly Media, Inc. https://r4ds.hadley.nz/\nStatistical Inference via Data Science: A Modern Dive into R and the Tidyverse (2020). Chester Ismay and Albert Y. Kim. Chapman & Hall/CRC The R Series. https://moderndive.com\n(short) courses with great reference material (perhaps some of it is a little outdated by now but intro material, ie on R, R studio, objects, markdown, dplyr basics is still relevant):\n\nhttps://github.com/rstudio-education/remaster-the-tidyverse\nhttp://stat545.com/index.html"
+  },
+  {
+    "objectID": "modules.html#instructions-on-how-to-get-stan-and-brms-set-up",
+    "href": "modules.html#instructions-on-how-to-get-stan-and-brms-set-up",
+    "title": "Modules",
+    "section": "Instructions on how to get Stan and brms set up",
+    "text": "Instructions on how to get Stan and brms set up\n\nIf you want “just do this” directions… DO THIS:\n\nFirst install Rstan in 2 steps:\n\nconfigure your C++ Toolchain, instructions per operating system are here: https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuring-c-toolchain\ninstall rstan and verify the installation: https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#installing-rstan\nThen install the brms R package; type in your R console: install.packages(“brms”)\nThen run the unit 6 code in module1_introbayes/brms_gettingstarted.Rmd… does it work? Yes -&gt; hoorah! Try out the demos No -&gt; Check if you missed some steps. If not, get help (in breakout rooms, on our slack)\n\n\nIf you want to figure things out for yourself, see https://github.com/paul-buerkner/brms?tab=readme-ov-file#how-do-i-install-brms and stan resources.\n\nNote: we will use the latest releases, NOT the developmental versions of code, unless stated otherwise (read: unless we come across a bug that’s been resolved in a developmental version)"
   }
 ]

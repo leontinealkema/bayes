@@ -29,3 +29,33 @@ format:
 -   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdZYMUlDKEdPqShN0AVodisBl3W84toEy8Jemx-HbXT03A?e=WcZa9R)
 
 -   Link to [recording module 4](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/Ec9Xo1JSNhhHmZcnulDAAtMB8ihDSXNjTdA4qhbtofZmiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=c1N7P0)
+
+# 5 - Sampling
+
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ES7fAj6xiIBOv2ps8jZbWPUBnRlgp7JRbw7QIaQ0h6uf0g?e=Kd53O0)
+
+-   Link to [recording module 5](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EeLVrkVEOV1NrbJ4j-3RMt8B0rfw8TFRdL3iAV8trEnivg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K7ku4C)
+
+# 6 - Sampling from posterior densities in Stan
+
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdZYMUlDKEdPqShN0AVodisBl3W84toEy8Jemx-HbXT03A?e=WcZa9R)
+
+Link to [recording module 6](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=DBaB3B)
+
+## Instructions on how to get Stan and brms set up
+
+-   If you want “just do this” directions… DO THIS:
+
+    -   First install Rstan in 2 steps:
+
+        -   configure your C++ Toolchain, instructions per operating system are here: <https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuring-c-toolchain>
+
+        -   install rstan and verify the installation: <https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#installing-rstan>
+
+        -   Then install the brms R package; type in your R console: install.packages(“brms")
+
+            Then run the unit 6 code in module1_introbayes/brms_gettingstarted.Rmd… does it work? Yes -\> hoorah! Try out the demos No -\> Check if you missed some steps. If not, get help (in breakout rooms, on our slack)
+
+-   If you want to figure things out for yourself, see <https://github.com/paul-buerkner/brms?tab=readme-ov-file#how-do-i-install-brms> and stan resources.
+
+    -   Note: we will use the latest releases, NOT the developmental versions of code, unless stated otherwise (read: unless we come across a bug that’s been resolved in a developmental version)

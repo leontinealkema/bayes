@@ -120,6 +120,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#bayesian-inference-for-one-discrete-outcome" id="toc-bayesian-inference-for-one-discrete-outcome" class="nav-link" data-scroll-target="#bayesian-inference-for-one-discrete-outcome">2 - Bayesian inference for one discrete outcome</a></li>
   <li><a href="#bayesian-inference-for-one-continuous-outcome" id="toc-bayesian-inference-for-one-continuous-outcome" class="nav-link" data-scroll-target="#bayesian-inference-for-one-continuous-outcome">3 - Bayesian inference for one continuous outcome</a></li>
   <li><a href="#deriving-a-posterior-bias-variance-trade-off" id="toc-deriving-a-posterior-bias-variance-trade-off" class="nav-link" data-scroll-target="#deriving-a-posterior-bias-variance-trade-off">4 - Deriving a posterior; bias-variance trade-off</a></li>
+  <li><a href="#sampling" id="toc-sampling" class="nav-link" data-scroll-target="#sampling">5 - Sampling</a></li>
+  <li><a href="#sampling-from-posterior-densities-in-stan" id="toc-sampling-from-posterior-densities-in-stan" class="nav-link" data-scroll-target="#sampling-from-posterior-densities-in-stan">6 - Sampling from posterior densities in Stan</a>
+  <ul class="collapse">
+  <li><a href="#instructions-on-how-to-get-stan-and-brms-set-up" id="toc-instructions-on-how-to-get-stan-and-brms-set-up" class="nav-link" data-scroll-target="#instructions-on-how-to-get-stan-and-brms-set-up">Instructions on how to get Stan and brms set up</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -172,8 +177,41 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Link to <a href="https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdZYMUlDKEdPqShN0AVodisBl3W84toEy8Jemx-HbXT03A?e=WcZa9R">slides</a></p></li>
 <li><p>Link to <a href="https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/Ec9Xo1JSNhhHmZcnulDAAtMB8ihDSXNjTdA4qhbtofZmiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=c1N7P0">recording module 4</a></p></li>
 </ul>
+</section>
+<section id="sampling" class="level1">
+<h1>5 - Sampling</h1>
+<ul>
+<li><p>Link to <a href="https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ES7fAj6xiIBOv2ps8jZbWPUBnRlgp7JRbw7QIaQ0h6uf0g?e=Kd53O0">slides</a></p></li>
+<li><p>Link to <a href="https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EeLVrkVEOV1NrbJ4j-3RMt8B0rfw8TFRdL3iAV8trEnivg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=K7ku4C">recording module 5</a></p></li>
+</ul>
+</section>
+<section id="sampling-from-posterior-densities-in-stan" class="level1">
+<h1>6 - Sampling from posterior densities in Stan</h1>
+<ul>
+<li>Link to <a href="https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdZYMUlDKEdPqShN0AVodisBl3W84toEy8Jemx-HbXT03A?e=WcZa9R">slides</a></li>
+</ul>
+<p>Link to <a href="https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=DBaB3B">recording module 6</a></p>
+<section id="instructions-on-how-to-get-stan-and-brms-set-up" class="level2">
+<h2 class="anchored" data-anchor-id="instructions-on-how-to-get-stan-and-brms-set-up">Instructions on how to get Stan and brms set up</h2>
+<ul>
+<li><p>If you want “just do this” directions… DO THIS:</p>
+<ul>
+<li><p>First install Rstan in 2 steps:</p>
+<ul>
+<li><p>configure your C++ Toolchain, instructions per operating system are here: <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuring-c-toolchain" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuring-c-toolchain</a></p></li>
+<li><p>install rstan and verify the installation: <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#installing-rstan" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#installing-rstan</a></p></li>
+<li><p>Then install the brms R package; type in your R console: install.packages(“brms”)</p>
+<p>Then run the unit 6 code in module1_introbayes/brms_gettingstarted.Rmd… does it work? Yes -&gt; hoorah! Try out the demos No -&gt; Check if you missed some steps. If not, get help (in breakout rooms, on our slack)</p></li>
+</ul></li>
+</ul></li>
+<li><p>If you want to figure things out for yourself, see <a href="https://github.com/paul-buerkner/brms?tab=readme-ov-file#how-do-i-install-brms" class="uri">https://github.com/paul-buerkner/brms?tab=readme-ov-file#how-do-i-install-brms</a> and stan resources.</p>
+<ul>
+<li>Note: we will use the latest releases, NOT the developmental versions of code, unless stated otherwise (read: unless we come across a bug that’s been resolved in a developmental version)</li>
+</ul></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
