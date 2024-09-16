@@ -40,7 +40,7 @@ format:
 
 -   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=vpZmAF)
 
--   Link to [recording module 6](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EZb-edMTnjpApCPRXjDYY9AB6pLYnk5jZsqIyEATzaEGeA?e=DBaB3B)
+-   Link to [recording module 6](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EY0lAsElQm9NgDo2-1BPBGcBtNckfMElA3K7Z5R41ar9rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=sIVnYe)
 
 ## Instructions on how to get Stan and brms set up
 
