@@ -72,16 +72,18 @@ In modules 7 and 8, we're going to discuss how to exchange information between p
 
 -   Module 7 [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/ERv8djoD_rdDjCy9a5ayYOQBNDZZt2nBzCCZ2otWzMJgBg?e=zNgf4T) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYH_zu8bguFNnsMel7NerxIBYwe1geB4bA9_jvviBJs7zw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UCLcFW)
 
--   Module 8 [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBLnUU9IKAMaiTGxnvEOJSTQ?e=qZYWb4) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
+-   Module 8 [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EboMuHtYaJRAj3mY_jC0_lUBfY0z5jThL6JWKR9kidRO-g?e=UcKLVO) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcpihxEcPwlCpH0p2GDT2hcBtlntRxc8dtS0FkYlAWbnZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Owprd0)
 
 -   R code in module78_fit_hierarchical.Rmd in the repo
 
+# 9 - Expanding your model universe
 
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Ecs9-_WCqp1EsD_2LZPlsAgB3tqXHtWMlKpeOGeWel6lbg?e=Kf0W37)
 
+-   Link to [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EdycrQ1-Q21AtjZHIb_gEWoBmXWvG3KVr_f1s0jFRqejxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ggaXbO)
 
+# 11 - Model checking and validation
 
+-   Part 1: Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdCWK06_qJBAqP2Q8t1VwxYB6QD3Np17JX2UJKFYsgNtTg?e=KwlSOn) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcuPnMVZGPlJnS3nMWegfKYBwjIxnMgvSQHMh0euPQRAig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=g2gkMO)
 
-
-
-
--   
+-   Part 2: Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Eah4GZHEWqxEmH2unrE1K5sBAabpl3T5iFakftjaW5Skfw?e=Jbimby) and
