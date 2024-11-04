@@ -86,4 +86,16 @@ In modules 7 and 8, we're going to discuss how to exchange information between p
 
 -   Part 1: Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EdCWK06_qJBAqP2Q8t1VwxYB6QD3Np17JX2UJKFYsgNtTg?e=KwlSOn) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EcuPnMVZGPlJnS3nMWegfKYBwjIxnMgvSQHMh0euPQRAig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=g2gkMO)
 
--   Part 2: Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Eah4GZHEWqxEmH2unrE1K5sBAabpl3T5iFakftjaW5Skfw?e=Jbimby) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EQP4XucJknNDpAhIUhBjGosBBkC2N1biDnjdq9ayrCksUQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=52j7OP)
+-   Part 2: Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Eah4GZHEWqxEmH2unrE1K5sBAabpl3T5iFakftjaW5Skfw?e=Jbimby) and [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EUTB9jm4v_VAmJzB730UVY4BbKcxtCYgrp20iyGflWRXxA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=myappA)
+
+# 12 - Bayesian workflow
+
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/Eeq_1RNTXh5LkjoR9JRnBJoBrKGOu8tj1wcxr3uqFazOFg?e=RLGNpR)
+
+-   Link to [recording](https://umass-my.sharepoint.com/:v:/g/personal/lalkema_umass_edu/EYXPXUY3NLNKsBbYFVPoFzsBR4E8B8mZcWL6mnq27BOb5g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tx1eAj)
+
+Supplementary material on priors and how to set them:
+
+-   Link to [slides](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EVtCMODHS7VIucFUts7-8ZoBx1VTFa4AhMhoGnEAwSp_gQ?e=uafpnc)
+
+-   Link to [recording](https://umass-my.sharepoint.com/:b:/g/personal/lalkema_umass_edu/EVtCMODHS7VIucFUts7-8ZoB1UnO8ofFuqXB1bIhBiBK_w?e=mZvc2S) (except for summary slide)
